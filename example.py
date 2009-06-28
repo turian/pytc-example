@@ -7,6 +7,8 @@ import sys
 
 from pytc import HDB, HDBOWRITER, HDBOCREAT
 hdb = HDB()
+# Open a hashdb for writing if it exists, or create a new one
+# This database is uncompressed. See hashdb.create for example of compression.
 hdb.open("casket.tch", HDBOWRITER | HDBOCREAT)
 
 # store records

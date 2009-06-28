@@ -1,3 +1,11 @@
 Some example code for pytc, the Python TokyoCabinet API.
 
     by Joseph Turian
+
+example.py  - Basic pytc usage.
+hashdb.py   - More advanced pytc:
+                * JSONHDB is a wrapper around pytc.HDB, that automatically
+                converts python objects to and from JSON string values.
+                * hashdb.create() creates an HDB, and demonstrates
+                HDB.tune for enabling bzip2 compression (no compression
+                is enabled by default).
